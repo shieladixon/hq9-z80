@@ -27,4 +27,7 @@ HQ
 D>  
 
 
+The documentation for the 8080 version says that the accumulator can be read at memory location 0252h. This may or may not be the case with my translation, it would rely on my program being the same length as the original. I haven't yet checked. Note that if you do access the memory location of the accum: label, this isn't the z80 accumulator or a copy of it, but variable in memory. Reading it after running the program would seem to go against the original principles of the language.
+
+
 The source file, hq9+.asm should compile with your favourite z80 assembler.   
